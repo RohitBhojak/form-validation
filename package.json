@@ -12,6 +12,6 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "deploy": "git subtree push --prefix dist origin gh-pages",
-    "branch": "git checkout gh-pages && git merge main no-edit"
+    "branch": "git checkout gh-pages && git merge main --no-edit"
   }
 }
