@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(287.56deg, #c2e9fb 0%, #a1c4fd 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #fff;
+  padding: 4.8rem 6.4rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: clamp(20rem, 44rem, 50rem);
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+input,
+select {
+  border: 0.2rem solid #9381ff;
+  border-radius: 0.4rem;
+  outline: none;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+}
+
+button {
+  background-color: #9381ff;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: red;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border: 0.2rem solid red;
+}
+
+input:valid {
+  border: 0.2rem solid green;
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+
+input:invalid + span,
+select:invalid + span,
+input:invalid + ul li,
+input:invalid + ul {
+  display: block;
+  color: red;
+}
